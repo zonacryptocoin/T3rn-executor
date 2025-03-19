@@ -1,8 +1,7 @@
 # T3rn-executor
 
 # CARA INSTALL T3RN EXECUTOR NODE
- 1.AUTO INSTALL
-Install git di node kalian, jika sudah lanjut clone. coopy code berikut ini
+ 1.Install git di node kalian, jika sudah lanjut clone. copy code berikut ini
 ```
 git clone https://github.com/zonacryptocoin/T3rn-executor.git
 ```
@@ -23,11 +22,23 @@ nano executor_config.sh
 ```
 source executor_config.sh
 ```
-6.Jalankan executor copy kode berikut
+6.Download Executor last version dan extract gunakan perintah berikut
+```
+curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | \
+grep -Po '"tag_name": "\K.*?(?=")' | \
+xargs -I {} wget https://github.com/t3rn/executor-release/releases/download/{}/executor-linux-{}.tar.gz
+
+# Extract the archive
+tar -xzf executor-linux-*.tar.gz
+
+# Navigate to the executor binary location
+cd executor/executor/bin
+```
+7. Jalankan executor
 ```
 ./executor
 ```
-7.Untuk keluar dari screen tanpa menutupnya kalian bisa gunakan tombol CTRL+A+D, jika ingin kembali membuka screen ketik perintah berikut
+8.Untuk keluar dari screen tanpa menutupnya kalian bisa gunakan tombol CTRL+A+D, jika ingin kembali membuka screen ketik perintah berikut
 ```
 screen -r t3rn
 ```
