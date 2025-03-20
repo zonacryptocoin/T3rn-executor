@@ -11,7 +11,7 @@ export EXECUTOR_PROCESS_ORDERS_ENABLED=true
 export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
 
 # Set gas limit threshold (in gwei)
-export EXECUTOR_MAX_L3_GAS_PRICE=100
+export EXECUTOR_MAX_L3_GAS_PRICE=1000
 
 # Private Key (Replace with your actual key)
 export PRIVATE_KEY_LOCAL=YOURE PRIVATKEY
